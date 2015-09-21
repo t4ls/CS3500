@@ -4,4 +4,4 @@
 <?php $twig = new Twig_Environment($loader); ?>
 <?php echo $twig->render('base.html', array('header' => 'Testing')); ?>
 
-<h2> stuff </h2>
+

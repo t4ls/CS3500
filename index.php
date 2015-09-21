@@ -5,4 +5,4 @@
 
 <?php echo $twig->render('base.html', array('header' => 'CS 3500')); ?>
 
-<h2> Work in progress </h2>
+
