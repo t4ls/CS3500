@@ -1,0 +1,48 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <TITLE>{{ header }}</TITLE>
+    <!-- Change base dependent on system -->
+    <p id="test"></p>
+    <script>
+        function urlpath() {
+            var hosts = window.location.href;
+            if (hosts.indexOf("brp9209") > -1) {
+                var strLink = "https://cs.wmich.edu/~brp9209/CS3500/";
+            } else if (hosts.indexOf("pmp2439") > -1) {
+                var strLink = "https://cs.wmich.edu/~pmp2439/CS3500/";
+            } else {
+                var strLink = "/CS3500/";
+            }
+            return "<base href = " + strLink + " />";
+        }
+        document.getElementById("test").innerHTML = urlpath();
+    </script>
+
+    <link rel="shortcut icon" href="./twig/assets/ninjacat.ico" type="image/x-icon"/>
+    <!--<link rel="stylesheet" type="text/css" href="./twig/css/stylesheet.css"> -->
+    <link rel="stylesheet" type="text/css" href="./twig/css/Skeleton-2.0.4/css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="./twig/css/Skeleton-2.0.4/css/normalize.css">
+</head>
+
+
+<body>
+    <div id="header" style="color:white">
+        <h1><a style="color:green;text-decoration: none;"  href="./"> CS3500</a></h1>
+    </div>
+    <div class="box" id="menu">
+        <span class="menu_item" id="menu1"><a href="./Assignment-1">Assignment 1</a></span>
+        <span class="menu_item" id="menu2"><a href="./Testing">Testing</a></span>
+        <span class="menu_item" id="menu3"><a href="./About">About</a></span>
+    </div>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+            "Page location is: " + window.location.href;
+    </script>
+
+</body>
+
+</html>
