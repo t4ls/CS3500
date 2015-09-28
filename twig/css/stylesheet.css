@@ -27,3 +27,7 @@ a:hover {
 	margin-right: 25px;
 	text-align:center;
 }
+.html-marquee {
+	height:20px;
+	width:100%;
+	font-weight:bold;}
