@@ -10,7 +10,7 @@
 
         <div class="row">
             <br>
-            <h2 align="center"><b> Hello World: Welcome to HTML5 and CSS3 </b></h2>
+            <h2 align="center"><b> Welcome to HTML5 and CSS3 </b></h2>
             <h2 style="margin-left:4%"><b><Videos!</b></h2>
             <marquee class="html-marquee" direction="left" behavior="scroll" scrollamount="12"> VIDEOS!</marquee>
             <br>
@@ -29,14 +29,20 @@
             </div>
         </div>
         <br>
-        <div class="row" style="padding-top:5%;border-top: 1px solid ">
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Tools Used</b></h2>
+        </div>
+        <div class="row">
+            <h4 aligin="center"><b>Skeleton CSS Framework</b></h4>
+            <p>Skeleton is light weight responsive framework that can be used to make sites look cool on mobile as well as desktops. We used Skeleton on this site so
+                that we could develop our own css without having to reinvent the wheel. </p>
         </div>
         <div class="row" style="margin-top: 1%;display: block;margin-left: auto;margin-right: auto;text-align:center;">
             <div class="one-half column" style="text-align:center;">
-                <br>
-                <p>Skeleton is light weight responsive framework that can be used to make sites look cool on mobile as well as desktops. We used Skeleton on this site
-                    so that we could develop our own css without having to reinvent the wheel. </p>
+                <p>Designing a website based on a responsive build has a lot to do with creating a grid for the site that uses a lot of proportions and adaptable media
+                    in order to produce similar builds on other devices. An increase in mobile traffic to the web has made responsive web design much more popular.
+                    Also, the introduction of media queries has resulted in an efficient way to have your website react with different displays on a multiplicity
+                    of devices.</p>
             </div>
             <div class="one-half column" style="text-align:center;">
                 <a href="http://getskeleton.com/"> <img width="80%" src="./twig/images/skeleton.png">
@@ -44,12 +50,14 @@
             </div>
         </div>
         <div class="row">
-            <h4 aligin="center"><b>Touching On Responsive Design</b></h4>
-            <p style="padding-top:1%;">Designing a website based on a responsive build has a lot to do with creating a grid for the site that uses a lot of proportions and adaptable media
-                in order to produce similar builds on other devices. An increase in mobile traffic to the web has made responsive web design much more popular. Also, the introduction
-                of media queries has resulted in an efficient way to have your website react with different displays on a multiplicity of devices.</p>
+            <h4 aligin="center"><b>Twig PHP Framework</b></h4>
+            <p>Another tool that we used to create our site was Twig, a modern template engine for PHP. While we currently aren't using this framework to it's full
+                ability, we hope that in the future it will serve as a standard for all of our assignments. We are currently using Twig to render the title and menu
+                html across all of our pages to ensure that it they are consistent.
+                <p>
+
         </div>
-        <div class="row" style="padding-top:5%;border-top: 1px solid ">
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Roadblocks Along The Way</b></h2>
             <h4 aligin="center"><b>Chrome And Favicons </b></h4>
             <p>The biggest problem we have run into when creating this website is getting our favicon to show up in Google Chrome. For some odd reason no matter how
