@@ -52,7 +52,7 @@
         <div class="row">
             <h4 aligin="center"><b>Twig PHP Framework</b></h4>
             <p>Another tool that we used to create our site was Twig, a modern template engine for PHP. While we currently aren't using this framework to it's full
-                ability, we hope that in the future it will serve as a standard for all of our assignments. We are currently using Twig to render the title and menu
+                ability, we hope that in the future it will serve as a standard for all of our assignments. We are using Twig to render the title and menu
                 html across all of our pages to ensure that it they are consistent.
                 <p>
 
