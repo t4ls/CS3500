@@ -24,7 +24,7 @@
                 <div class="one-half column" style="text-align:center;">
                     <h4><b> CSS Tutorial by Derek Banas</b></h4>
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/CUxH_rWSI1k" frameborder="0" allowfullscreen></iframe>
-                    <p>A useful video on the fundementals of CSS</p>
+                    <p>And Sir Patrick proclaimed, "Yes, Commander Blake--I will learn CSS3 and become the best I ever could!"</p>
                 </div>
             </div>
         </div>
