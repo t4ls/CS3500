@@ -47,7 +47,7 @@
             <h4 aligin="center"><b>Touching On Responsive Design</b></h4>
             <p style="padding-top:1%;">Designing a website based on a responsive build has a lot to do with creating a grid for the site that uses a lot of proportions and adaptable media
                 in order to produce similar builds on other devices. An increase in mobile traffic to the web has made responsive web design much more popular. Also, the introduction
-                of media queries has resulted in an efficient way to have your website react with different displays on a multiplicity of devices</p>
+                of media queries has resulted in an efficient way to have your website react with different displays on a multiplicity of devices.</p>
         </div>
         <div class="row" style="padding-top:5%;border-top: 1px solid ">
             <h2 align="center"><b>Roadblocks Along The Way</b></h2>
