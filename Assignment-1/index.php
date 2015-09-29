@@ -5,7 +5,7 @@
 <?php echo $twig->render('base.html', array('header' => 'Assignment 1')); ?>
 <html>
 
-<body>
+<body link="blue">
     <div class="container">
 
         <div class="row">
@@ -71,6 +71,29 @@
                 <script type='text/javascript' src='//www.gistfy.com/github/gist/dd062af35840d64e5c0b?lang=Javascript&style=monokai_sublime'></script>
 
         </div>
+		<div class="row" style="padding-top:2%;border-top: 1px solid ">
+            <h2 align="center"><b>Frequently Asked Questions</b></h2>
+       
+            <p>Q: <i>What is new about HTML5?</i></p>
+            <p>A: The biggest change is that HTML5 documents are explicitly recognized as interactive applications.
+            Every document element in HTML5 has a corresponding JavaScript API that describes how that element should behave
+            in response to user actions and other events.
+        </div>
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+        	<p>Q: <i>Are there new HTML5 tags?</i></p>
+        	<p>A: Yes, there are new HTML5 elements that provide richer semantic descriptions of documents, new media elements, new
+        	form input types, and a bunch of new element attributes.
+        </div>
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+        <p>Q: <i>Where can I get an HTML5 browser?</i></p>
+        <p>A: <a href="www.opera.com" style="color:blue;">Opera</a>, <a href="www.google.com/chrome/" style="color:blue;">Chrome</a>, and 
+        <a href="www.apple.com/safari" style="color:blue;">Safari</a> provide pretty solid support for HTML5 in their current 
+        versions including their browsers for all of their mobile devices.
+        <br>
+        <p>For additional frequently asked questions, please visit this page 
+        <a href="larryaronson.com/2011/15-html5-faqs/" style="color:blue;">here</a>.
+        </div>
+
     </div>
     </div>
 </body>
