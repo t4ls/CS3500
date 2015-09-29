@@ -64,7 +64,7 @@
                 we set its reference the favicon never shows up. Still not sure what the root cause of this is, Chrome is probably not caching the favicon correctly.
                 See the <a href="https://code.google.com/p/chromium/issues/detail?id=440322">Bug Report</a> we found for more details.
                 <h4 aligin="center"><b>Relative Pathing Issues</b></h4>
-                <p>Another issue that we solved with some Javascript was that the base url for relative pathing was different depending on the enviroment the website
+                <p>One issue that we solved with some Javascript was that the base url for relative pathing was different depending on the enviroment the website
                     was being worked on causing the CSS not to be applied. Instead of constantly changing the path we wrote a Javascript to handle everything for
                     us.
                 </p>
@@ -79,12 +79,12 @@
             Every document element in HTML5 has a corresponding JavaScript API that describes how that element should behave
             in response to user actions and other events.
         </div>
-        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+        <div class="row" style="padding-top:1%">
         	<p>Q: <i>Are there new HTML5 tags?</i></p>
         	<p>A: Yes, there are new HTML5 elements that provide richer semantic descriptions of documents, new media elements, new
         	form input types, and a bunch of new element attributes.
         </div>
-        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+        <div class="row" style="padding-top:1%">
         <p>Q: <i>Where can I get an HTML5 browser?</i></p>
         <p>A: <a href="www.opera.com" style="color:blue;">Opera</a>, <a href="www.google.com/chrome/" style="color:blue;">Chrome</a>, and 
         <a href="www.apple.com/safari" style="color:blue;">Safari</a> provide pretty solid support for HTML5 in their current 
