@@ -38,7 +38,7 @@
                 that we could develop our own css without having to reinvent the wheel. </p>
         </div>
         <div class="row" style="margin-top: 1%;display: block;margin-left: auto;margin-right: auto;text-align:center;">
-            <div class="one-half column" style="text-align:center;">
+            <div class="one-half column" >
                 <p>Designing a website based on a responsive build has a lot to do with creating a grid for the site that uses a lot of proportions and adaptable media
                     in order to produce similar builds on other devices. An increase in mobile traffic to the web has made responsive web design much more popular.
                     Also, the introduction of media queries has resulted in an efficient way to have your website react with different displays on a multiplicity
