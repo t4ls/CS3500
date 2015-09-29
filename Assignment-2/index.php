@@ -7,11 +7,12 @@
 <html>
 
 <body>
-
-
-
-
-
+	<div class="container">
+		<div class="row">
+            <br>
+            <h2 align="center"><b> Welcome to Javascript </b></h2>
+        </div>
+	</div>
 
 </body>
 
