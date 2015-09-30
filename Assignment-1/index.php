@@ -11,7 +11,6 @@
         <div class="row">
             <br>
             <h2 align="center"><b> Welcome to HTML5 and CSS3 </b></h2>
-            <h2 style="margin-left:4%"><b><Videos!</b></h2>
             <marquee class="html-marquee" direction="left" behavior="scroll" scrollamount="3"> VIDEOS!</marquee>
             <br>
             <div class="row" style="margin-top: 1%;display: block;margin-left: auto;margin-right: auto;text-align:center;">

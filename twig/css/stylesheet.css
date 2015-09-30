@@ -30,4 +30,6 @@ a:hover {
 .html-marquee {
 	height:20px;
 	width:100%;
-	font-weight:bold;}
+	font-weight:bold;
+	color:green;
+}
