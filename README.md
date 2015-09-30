@@ -20,3 +20,7 @@ Make a page on how Javascript works
 5. Compatability
 6. Security
 7. Tools and Debugging
+
+## Assignment 3:
+Not sure what this is yet. Something with detecting color out of videos in html. Also making graphs and stuff
+
