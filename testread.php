@@ -6,7 +6,7 @@ $lines = count(file($file));
 fgets($myfile);
 $arr = array();
 while(!feof($myfile)) {
-  if($count != $lines){
+  if($count < $lines){
 //   echo "".$count.". ".fgets($myfile) . "";
   $arr[$count] = fgets($myfile);
   }else{
