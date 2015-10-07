@@ -14,7 +14,7 @@
             <br>
             <div class="row" style="text-align:center;">
                 <h4><b> Javascript Tutorial by Derek Banas</b></h4>
-                <iframe width="75%" height="315" src="https://www.youtube.com/embed/fju9ii8YsGs" frameborder="0" allowfullscreen></iframe>
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/fju9ii8YsGs" frameborder="0" allowfullscreen></iframe>
                 <p>Add Javascript tutorial stuff here</p>
             </div>
         </div>
@@ -24,6 +24,7 @@
             <ul>
                 <li> Javascript programs are stored in and delivered as .js file type.</li>
                 <li> JavaScript code should not be embedded in HTML files unless the code is specific to a single session.</li>
+                <li> &lt;script src=filename.js &gt; tags should be placed as far down in the body as possible to reduce the delays caused by loading the script</li>
             </ul>
 
         </div>
