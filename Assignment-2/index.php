@@ -30,8 +30,8 @@
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Examples</b></h2>
             <p>Add Javascript examples stuff here</p>
-            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-                Click me to display Date and Time.</button>
+            <button type="button-primary" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click to display Date and Time.</button>
 
             <p id="demo"></p>
         </div>
