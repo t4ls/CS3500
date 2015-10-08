@@ -36,13 +36,6 @@ $arr = array_slice($arr,($count - 11));
 ?>
 <html>
 
-
-<script>
-var users = <?php echo json_encode($arr); ?>;
-</script>
-<script type="text/javascript" src="./Assignment-2/Validator.js">
-</script>
-
 <body>
     <div class="container">
         <div class="row">
@@ -82,12 +75,27 @@ var users = <?php echo json_encode($arr); ?>;
 
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Frameworks</b></h2>
-        </div>
+            <p>One framework we are planning to use is jQuery. jQuery is a fast, small, and feature-rich JavaScript library. It is designed to make client
+	    side scripting easier for HTML. This button is hidden when clicked on because of a jQuery script<hidden><button>Click Me</button></hidden></p>
+	</div>
     </div>
 
 
-<script type="text/javascript src="Validator.js">
+<script>
+var users = <?php echo json_encode($arr); ?>;
 </script>
+<script type="text/javascript" src="./Assignment-2/Validator.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $("hidden").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+
 </body>
 
 </html>
