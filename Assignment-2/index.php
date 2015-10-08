@@ -5,6 +5,14 @@
 <?php echo $twig->render('base.html', array('header' => 'Assignment 2')); ?>
 
 <?php
+    
+if(isset($_POST['submitbutton'])){
+$file = 'read.txt';
+$appendfile = file_get_contents($file);
+$appendfile .=  $_POST['username']."\n";
+file_put_contents($file, $appendfile);
+}    
+
 $count = 0;
 $myfile = fopen("read.txt", "r") or die("Unable to open file!");
 $file = "read.txt";
@@ -13,7 +21,6 @@ fgets($myfile);
 $arr = array();
 while(!feof($myfile)) {
   if($count < $lines){
-//   echo "".$count.". ".fgets($myfile) . "";
   $arr[$count] = str_replace("\n","",fgets($myfile));
   }else{
   fgets($myfile);
@@ -22,47 +29,19 @@ $count = $count + 1;
 }
 $test = fread($myfile,filesize("read.txt"));
 fclose($myfile);
-//printVar($arr);
-//echo "Current number of users: ".(count($arr)-1)."\n";
 $arr = array_slice($arr,0,-1);
-function printVar($var) {
-    echo '<pre>';
-    var_dump($var); 
-    echo '</pre>';
+if( $count > 11){
+$arr = array_slice($arr,($count - 11));
 }
 ?>
 <html>
 
+
 <script>
-function validateNew() {
-  //  alert("The username does not exist");
-    var x = document.forms["newuser"]["username"].value;
-    if (x == "" || x==null) {
-        alert("A username is required");
-        return false;
-    }
-    
-        var users = <?php echo json_encode($arr); ?>;
-        for (jj=0; jj < users.length; jj++){
-        if (users[jj]==x) {
-        alert("That username already exists");
-        return false;
-        }
-    }    
-    var x = document.forms["newuser"]["email"].value;
-    var atpos = x.length
-    if (atpos>15) {
-        alert("Username limit is 15 characters");
-        return false;
-    }
-    return false;
-
-      
-}
+var users = <?php echo json_encode($arr); ?>;
 </script>
-
-
-
+<script type="text/javascript" src="./Assignment-2/Validator.js">
+</script>
 
 <body>
     <div class="container">
@@ -91,13 +70,13 @@ function validateNew() {
             <p>Add Javascript examples stuff here</p>
             <button type="button-primary" onclick="document.getElementById('demo').innerHTML = Date()">
             Click to display Date and Time.</button>
-            <p><?php echo json_encode($arr); ?></p>
-
             <p id="demo"></p>
-            <h1>Login</h1>
-            <form name="newuser" form action="testread.php" onsubmit="return validateNew();" method="post" >
+	    
+	    <p>Displays the last 10 users: <?php echo json_encode($arr); ?></p>
+            <h3>Login</h3>
+            <form name="newuser" form action="" onsubmit="return validateNew();" method="post" >
             <div class="form_row"><span class="form_label">Username: </span><input type="text" name="username"></div>
-            <div class="form_row"><input type="submit" value="Submit"></div>
+            <div class="form_row"><input type="submit" value="Submit" name="submitbutton"></div>
             </form>
         </div>
 
@@ -107,6 +86,9 @@ function validateNew() {
     </div>
 
 
+<script type="text/javascript src="Validator.js">
+</script>
 </body>
 
 </html>
+
