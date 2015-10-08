@@ -12,13 +12,18 @@ function validateNew() {
         return false;
         }
     }    
-    var x = document.forms["newuser"]["username"].value;
     var atpos = x.length
     if (atpos>15) {
         alert("Username limit is 15 characters");
         return false;
     }
-    return true;
 
+    if (/^[a-zA-Z]+$/.test(x)) {
+    return true;
+    } else {
+
+    alert("Please only use characters");
+    return false;
+    }
       
 }

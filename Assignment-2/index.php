@@ -4,7 +4,14 @@
 <?php $twig = new Twig_Environment($loader); ?>
 <?php echo $twig->render('base.html', array('header' => 'Assignment 2')); ?>
 
+
 <?php
+//if (isset($_POST['username']) && isset($_SERVER['REQUEST_URI']))
+//{
+//    [process the post data in 'username']
+//   header ('Location: ' . $_SERVER['REQUEST_URI']);
+//    exit();
+//}
     
 if(isset($_POST['submitbutton'])){
 $file = 'read.txt';
