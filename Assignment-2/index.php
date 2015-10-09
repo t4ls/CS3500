@@ -41,7 +41,7 @@
             <button type="button-primary" onclick="document.getElementById('demo').innerHTML = Date()">
                 Click to display Date and Time.</button>
             <p id="demo"></p>
-	    <p>This form calls the function validateNew() from an external <a href="Validator.js">javascript file.</a> The function 
+	    <p>This form calls the function validateNew() from an external <a href="./Assignment-2/Validator.js">javascript file.</a> The function 
 		checks to if the user input is valid before allowing it to post data.</p>	
             <div class="row">
                 <div class="one-half column">
