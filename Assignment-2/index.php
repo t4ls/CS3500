@@ -37,15 +37,17 @@
         </div>
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Examples</b></h2>
-            <p>Add Javascript examples stuff here</p>
+            <p>This is a simple example of Javascript used to send the date to html id "demo"</p>
             <button type="button-primary" onclick="document.getElementById('demo').innerHTML = Date()">
                 Click to display Date and Time.</button>
             <p id="demo"></p>
+	    <p>This form calls the function validateNew() from an external <a href="Validator.js">javascript file.</a> The function 
+		checks to if the user input is valid before allowing it to post data.</p>	
             <div class="row">
                 <div class="one-half column">
                     <form name="newuser" form action="" onsubmit="return validateNew();" method="post">
                         <div class="form_row"><span class="form_label">Username: </span>
-                            <input type="text" name="username">
+                            <input type="text" name="username" style="width:70%;">
                         </div>
                         <div class="form_row">
                             <input type="submit" value="Submit" name="submitbutton">
@@ -74,7 +76,10 @@
             <p>OpenCPU is a framework for embedded scientific computing and reproducible research. We are using it here to run
                 R code. OpenCPU requires jQuery to provide Ajax wrappers for calling R from within a web page.</p>
             <textarea id="input" rows="10" cols="50" style="width:70%; height: 120px; display: block; margin-left: auto; margin-right: auto;">
-                function(){ hello = 1:10 return(hello+1) }
+                function(){ 
+		hello = 1:10 
+		return(hello+1) 
+		}
             </textarea>
             <br />
             <button id="submitbutton" type="button">Call R</button>

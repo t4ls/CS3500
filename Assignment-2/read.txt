@@ -3,6 +3,3 @@ Blake
 cpg
 goldenboy
 fish
-cat
-dog
-frog
