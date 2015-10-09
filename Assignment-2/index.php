@@ -4,41 +4,7 @@
 <?php $twig = new Twig_Environment($loader); ?>
 <?php echo $twig->render('base.html', array('header' => 'Assignment 2')); ?>
 
-
-<?php
-    
-if(isset($_POST['submitbutton'])){
-$file = 'read.txt';
-$appendfile = file_get_contents($file);
-$appendfile .=  $_POST['username']."\n";
-file_put_contents($file, $appendfile);
-
-$get_info = "?status=success";
-header("Location: ".$_SERVER['REQUEST_URI'].$get_info);
-exit();
-}    
-
-$count = 0;
-$myfile = fopen("read.txt", "r") or die("Unable to open file!");
-$file = "read.txt";
-$lines = count(file($file));
-fgets($myfile);
-$arr = array();
-while(!feof($myfile)) {
-  if($count < $lines){
-  $arr[$count] = str_replace("\n","",fgets($myfile));
-  }else{
-  fgets($myfile);
-  } 
-$count = $count + 1;
-}
-$test = fread($myfile,filesize("read.txt"));
-fclose($myfile);
-$arr = array_slice($arr,0,-1);
-if( $count > 11){
-$arr = array_slice($arr,($count - 11));
-}
-?>
+<?php require '../Assignment-2/newuser.php';?>
 <html>
 
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script> 
@@ -73,14 +39,18 @@ $arr = array_slice($arr,($count - 11));
             <button type="button-primary" onclick="document.getElementById('demo').innerHTML = Date()">
             Click to display Date and Time.</button>
             <p id="demo"></p>
-	    
-	    <p>Displays the last 10 users: <?php echo json_encode($arr); ?></p>
-            <h3>Login</h3>
+	    <div class="row">
+	    <div class="one-half column" > 
             <form name="newuser" form action="" onsubmit="return validateNew();" method="post" >
             <div class="form_row"><span class="form_label">Username: </span><input type="text" name="username"></div>
-            <mybutton><div class="form_row"><input type="submit" value="Submit" name="submitbutton"></mybutton></div>
+            <div class="form_row"><input type="submit" value="Submit" name="submitbutton"></div>
             </form>
-        </div>
+	    </div>
+	    <div class="one-half column" >
+	    <p>Displays the last 10 users: <?php echo json_encode($arr); ?></p>
+            </div>
+	</div>
+	</div>
 
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Frameworks</b></h2>
@@ -88,7 +58,8 @@ $arr = array_slice($arr,($count - 11));
             <p>One framework we are planning to use is jQuery. jQuery is a fast, small, and feature-rich JavaScript library. It is designed to make client
 	    side scripting easier for HTML. This button is hidden when clicked on because of a jQuery script <hidden><button>Click Me</button></hidden></p>
 	 <h4 aligin=><b>OpenCPU Framework</b></h4>
-	<p>OpenCPU is a framework for embedded scientific computing and reproducible research. We are using it here to run R code</p>
+	<p>OpenCPU is a framework for embedded scientific computing and reproducible research. We are using it here to run R code. OpenCPU requires jQuery to
+	provide Ajax wrappers for calling R from within a web page.</p>
 	<textarea id="input" rows="10" cols="50" style="width:70%; height: 120px; display: block; margin-left: auto; margin-right: auto;">
 	function(){
 	   hello <- 1:10
@@ -119,48 +90,8 @@ $arr = array_slice($arr,($count - 11));
 <script>
 var users = <?php echo json_encode($arr); ?>;
 </script>
-<script type="text/javascript" src="./Assignment-2/Validator.js">
-</script>
-<script>
-$(document).ready(function(){
-    $("hidden").click(function(){
-        $(this).hide();
-    });
-});
-//because identity is in base
-ocpu.seturl("//public.opencpu.org/ocpu/library/base/R")
-//actual handler
-$("#submitbutton").on("click", function(){
-    //arguments
-    var mysnippet = new ocpu.Snippet($("#input").val());
-    
-    //disable button
-    $("button").attr("disabled", "disabled");
-    //perform the request
-    var req = ocpu.rpc("do.call", {
-        what : mysnippet,
-        args : {
-//            x : [1,2,3,4,5],
-//            n : 3
-        }
-    }, function(output){
-      $("#output").text(output); 
-    });
-        
-    //if R returns an error, alert the error message
-    req.fail(function(){
-        alert("Server error: " + req.responseText);
-    });      
-    
-    req.always(function(){
-        $("button").removeAttr("disabled");    
-    });
-}); 
-
-</script>
-
-
-
+<script src="./Assignment-2/Validator.js"></script>
+<script src="./Assignment-2/jqueryscripts.js"></script>
 
 </body>
 
