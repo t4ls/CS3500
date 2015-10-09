@@ -6,18 +6,16 @@
 
 
 <?php
-//if (isset($_POST['username']) && isset($_SERVER['REQUEST_URI']))
-//{
-//    [process the post data in 'username']
-//   header ('Location: ' . $_SERVER['REQUEST_URI']);
-//    exit();
-//}
     
 if(isset($_POST['submitbutton'])){
 $file = 'read.txt';
 $appendfile = file_get_contents($file);
 $appendfile .=  $_POST['username']."\n";
 file_put_contents($file, $appendfile);
+
+$get_info = "?status=success";
+header("Location: ".$_SERVER['REQUEST_URI'].$get_info);
+exit();
 }    
 
 $count = 0;
@@ -42,7 +40,7 @@ $arr = array_slice($arr,($count - 11));
 }
 ?>
 <html>
-
+<body onload="document.getElementById('redirectForm').submit()">
 <body>
     <div class="container">
         <div class="row">
@@ -76,14 +74,14 @@ $arr = array_slice($arr,($count - 11));
             <h3>Login</h3>
             <form name="newuser" form action="" onsubmit="return validateNew();" method="post" >
             <div class="form_row"><span class="form_label">Username: </span><input type="text" name="username"></div>
-            <div class="form_row"><input type="submit" value="Submit" name="submitbutton"></div>
+            <mybutton><div class="form_row"><input type="submit" value="Submit" name="submitbutton"></mybutton></div>
             </form>
         </div>
 
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Frameworks</b></h2>
             <p>One framework we are planning to use is jQuery. jQuery is a fast, small, and feature-rich JavaScript library. It is designed to make client
-	    side scripting easier for HTML. This button is hidden when clicked on because of a jQuery script<hidden><button>Click Me</button></hidden></p>
+	    side scripting easier for HTML. This button is hidden when clicked on because of a jQuery script <hidden><button>Click Me</button></hidden></p>
 	</div>
     </div>
 
@@ -101,7 +99,6 @@ $(document).ready(function(){
         $(this).hide();
     });
 });
-</script>
 
 </body>
 
