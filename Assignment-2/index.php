@@ -40,7 +40,11 @@ $arr = array_slice($arr,($count - 11));
 }
 ?>
 <html>
-<body onload="document.getElementById('redirectForm').submit()">
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script> 
+<script src="//www.opencpu.org/js/archive/opencpu-0.4.js"></script>
+
+
 <body>
     <div class="container">
         <div class="row">
@@ -80,10 +84,36 @@ $arr = array_slice($arr,($count - 11));
 
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Frameworks</b></h2>
+	    <h4 aligin=><b>jQuery JavaScript Library</b></h4>
             <p>One framework we are planning to use is jQuery. jQuery is a fast, small, and feature-rich JavaScript library. It is designed to make client
 	    side scripting easier for HTML. This button is hidden when clicked on because of a jQuery script <hidden><button>Click Me</button></hidden></p>
+	 <h4 aligin=><b>OpenCPU Framework</b></h4>
+	<p>OpenCPU is a framework for embedded scientific computing and reproducible research. We are using it here to run R code</p>
+	<textarea id="input" rows="10" cols="50" style="width:70%; height: 120px; display: block; margin-left: auto; margin-right: auto;">
+	function(){
+	   hello <- 1:10
+  	return(hello+1)   
+	}
+	</textarea> 
+	<br /> <button id="submitbutton" type="button">Call R</button>
+
+<pre><code id="output"></code></pre>
+	
 	</div>
-    </div>
+
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+            <h2 align="center"><b>Compatability</b></h2>
+	<p>ADD CONTENT</p>
+	</div>
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+            <h2 align="center"><b>Security</b></h2>
+	<p>ADD CONTENT</p>
+	</div>
+        <div class="row" style="padding-top:2%;border-top: 1px solid ">
+            <h2 align="center"><b>Tools and Debugging</b></h2>
+	<p>ADD CONTENT</p>
+	</div>    
+   </div>
 
 
 <script>
@@ -91,15 +121,47 @@ var users = <?php echo json_encode($arr); ?>;
 </script>
 <script type="text/javascript" src="./Assignment-2/Validator.js">
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-</script>
 <script>
 $(document).ready(function(){
     $("hidden").click(function(){
         $(this).hide();
     });
 });
+//because identity is in base
+ocpu.seturl("//public.opencpu.org/ocpu/library/base/R")
+//actual handler
+$("#submitbutton").on("click", function(){
+    //arguments
+    var mysnippet = new ocpu.Snippet($("#input").val());
+    
+    //disable button
+    $("button").attr("disabled", "disabled");
+    //perform the request
+    var req = ocpu.rpc("do.call", {
+        what : mysnippet,
+        args : {
+//            x : [1,2,3,4,5],
+//            n : 3
+        }
+    }, function(output){
+      $("#output").text(output); 
+    });
+        
+    //if R returns an error, alert the error message
+    req.fail(function(){
+        alert("Server error: " + req.responseText);
+    });      
+    
+    req.always(function(){
+        $("button").removeAttr("disabled");    
+    });
+}); 
+
 </script>
+
+
+
+
 </body>
 
 </html>
