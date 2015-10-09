@@ -2,6 +2,3 @@
 Blake
 cpg
 goldenboy
-
-aaaaa
-hello

@@ -99,7 +99,7 @@ $(document).ready(function(){
         $(this).hide();
     });
 });
-
+</script>
 </body>
 
 </html>
