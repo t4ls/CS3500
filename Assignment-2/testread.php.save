@@ -1,0 +1,23 @@
+<?php
+$count = 1;
+$myfile = fopen("read.txt", "r") or die("Unable to open file!");
+$file = "read.txt";
+$lines = count(file($file));
+}
+$test = fread($myfile,filesize("read.txt"));
+fclose($myfile);
+?>
+
+fgets($myfile);
+while(!feof($myfile)) {
+  if($count != $lines){
+   echo "".$count.". ".fgets($myfile) . "";
+   
+  }else{
+  fgets($myfile);
+  } 
+$count = $count + 1;
+}
+$test = fread($myfile,filesize("read.txt"));
+fclose($myfile);
+?>

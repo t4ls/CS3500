@@ -7,7 +7,7 @@ function validateNew() {
     }
     
         for (jj=0; jj < users.length; jj++){
-        if (users[jj]==x) {
+        if (users[jj].replace(/\s/g, '')==x) {
         alert("That username already exists");
         return false;
         }
