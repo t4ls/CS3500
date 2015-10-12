@@ -3,6 +3,13 @@ $(document).ready(function(){
         $(this).hide();
     });
 });
+Browsers = new WhichBrowser();
+
+$(document).ready(function(){
+    $("mybrowser").click(function(){
+        $(this).alert(BrowserDetect.browser);
+    });
+});
 //because identity is in base
 ocpu.seturl("//public.opencpu.org/ocpu/library/base/R")
 //actual handler

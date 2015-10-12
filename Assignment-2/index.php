@@ -10,6 +10,7 @@
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="//www.opencpu.org/js/archive/opencpu-0.4.js"></script>
 
+
 <html>
 <body>
     <div class="container">
@@ -41,7 +42,7 @@
             <button type="button-primary" onclick="document.getElementById('demo').innerHTML = Date()">
                 Click to display Date and Time.</button>
             <p id="demo"></p>
-	    <p>This form calls the function validateNew() from an external <a href="./Assignment-2/Validator.js">javascript file.</a> The function 
+	    <p>This form calls the function validateNew() from an external javascript file, <a href="./Assignment-2/validator.js">validator.js</a>, the function 
 		checks to if the user input is valid before allowing it to post data.</p>	
             <div class="row">
                 <div class="one-half column">
@@ -56,7 +57,7 @@
                 </div>
                 <div class="one-half column">
                     <p>Displays the last 10 users:
-                        <?php echo json_encode($arr); ?>
+                       <?php echo json_encode(implode(" ",$arr)); ?>
                     </p>
                 </div>
             </div>
@@ -90,7 +91,10 @@
 
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Compatability</b></h2>
-            <p>ADD CONTENT</p>
+
+            <p>When troubleshooting  browser compatibility it is important to know what type of browser the user is running.
+            We used a javascript to check the browser: <a href="./Assignment-2/browsercheck.js">browsercheck.js</a> </p>
+            <p><div id="browserResult"></div></p>
         </div>
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Security</b></h2>
@@ -98,16 +102,16 @@
         </div>
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Tools and Debugging</b></h2>
-            <p>ADD CONTENT</p>
+
         </div>
     </div>
 
-
     <script>
-        var users = <? php echo json_encode($arr); ?> ;
+        var users = <?php echo json_encode($arr); ?> ;
     </script>
-    <script src="./Assignment-2/Validator.js"></script>
+    <script src="./Assignment-2/validator.js"></script>
     <script src="./Assignment-2/jqueryscripts.js"></script>
+    <script src="./Assignment-2/browsercheck.js"></script>
 
 </body>
 </html>

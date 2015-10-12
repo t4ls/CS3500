@@ -29,6 +29,10 @@ fclose($myfile);
 $arr = array_slice($arr,0,-1);
 if( $count > 11){
 $arr = array_slice($arr,($count - 11));
+$fp = fopen("read.txt", "w+");
+fwrite($fp, implode( " ".PHP_EOL, $arr)  );
+fwrite($fp,PHP_EOL);
+fclose($fp);
 }
 ?>
 
