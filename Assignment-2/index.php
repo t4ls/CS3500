@@ -57,6 +57,8 @@
                 <li> JavaScript code should not be embedded in HTML files unless the code is specific to a single session.</li>
                 <li> &lt;script src=filename.js &gt; tags should be placed as far down in the body as possible to reduce the delays
                     caused by loading the script</li>
+		<li>When writing Javascript code, avoid line length longer than 80 characters. If a line is longer than 80 characters it 
+		    should be broken and the next line should be indented 8 spaces.</li>
             </ul>
 
         </div>
