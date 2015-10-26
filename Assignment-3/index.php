@@ -36,11 +36,13 @@
   
 <body>
 <br>
+
 <div class="container">
+<!--
 <div id="container2">
-    <video autoplay="true" id="videoElement">
+   <video autoplay="true" id="videoElement">
      
-    </video>
+    </video> 
 </div>
 <script>
 var video = document.querySelector("#videoElement");
@@ -60,7 +62,7 @@ function videoError(e) {
 } 
 </script>
 
-
+-->
 <h1>Camera API</h1>
 
             <section class="main-content">
