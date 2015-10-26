@@ -29,7 +29,8 @@
         </div>
         <div class="row" style="text-align:center;">
         <p>Another fantastic source for becoming comfortable with writing your own Javascript is <a href="http://www.w3schools.com/js/default.asp" style="color:blue;">w3schools</a>. The
-        following are simple examples that you can find on w3schools that involve playing around with some Javascript.</p>
+        following are simple examples that you can find on w3schools that involve playing around with some Javascript. If you have additional questions about
+        certain functionalities of Javascipt, check out these 25 questions and answers <a href="http://www.toptal.com/javascript/interview-questions" style="color:blue;">here</a>.</p>
         </div>
         <div class="row" style="margin-top: 1%;display: block;margin-left: auto;margin-right: auto;text-align:center;">
 
