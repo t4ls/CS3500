@@ -17,6 +17,9 @@
         <div class="row">
             <br>
             <h2 align="center"><b> Welcome to Javascript </b></h2>
+            <div class="row" style="text-align:center;">
+            <p>The objective of this page is to help users become aquitted with knowledge about Javascript and some of the things you can do with it.</p>
+            </div>
             <br>
             <div class="row" style="text-align:center;">
                 <h4><b> Javascript Tutorial by Derek Banas</b></h4>
@@ -46,11 +49,14 @@
 					<button type="button" onclick="document.getElementById('change2').innerHTML = 'Hello, changed content!'">
 					Click Me!</button>
                 </div>
+                <div class="row" style="text-align:center;">
+                <p>You can find additional examples of some Javascript at <a href="http://www.w3schools.com/js/js_examples.asp" style="color:blue;">w3schools</a>.</p>
+                </div>
         </div>
 
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Javascript Standards</b></h2>
-            <p>For these standards we used <a href="http://javascript.crockford.com/code.html">Crockford's JavaScript</a> coding
+            <p>For these standards we used <a href="http://javascript.crockford.com/code.html" style="color:blue;">Crockford's JavaScript</a> coding
                 guidelines </p>
             <ul>
                 <li> Javascript programs are stored in and delivered as .js file type.</li>
@@ -119,7 +125,7 @@
             <h2 align="center"><b>Compatability</b></h2>
 
             <p>When troubleshooting  browser compatibility it is important to know what type of browser the user is running.
-            We used a javascript to check the browser: <a href="./Assignment-2/browsercheck.js">browsercheck.js</a> </p>
+            We used a javascript to check the browser: <a href="./Assignment-2/browsercheck.js" style="color:blue;">browsercheck.js</a> </p>
             <p><div id="browserResult"></div></p>
         </div>
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
@@ -133,7 +139,7 @@
             security vulnerabilities are the result of browser authors failing to take these measures to contain DOM-based 
             JavaScript security risks.</p>
             
-            <p style="color:gray;padding-left:25px">Excerpt from article written by Fergal Glynn</p>
+            <p style="color:gray;padding-left:25px">Excerpt from article written by <a href="http://www.veracode.com/security/javascript-security" style="color:blue;">Fergal Glynn</a></p>
         </div>
         <div class="row" style="padding-top:2%;border-top: 1px solid ">
             <h2 align="center"><b>Tools and Debugging</b></h2>
