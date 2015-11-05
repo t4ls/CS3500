@@ -1,17 +1,6 @@
 <?php
 if(isset($_POST['submitbutton'])){
 
-uploader();
-
-$get_info = "?status=success";
-header("Location: ".$_SERVER['REQUEST_URI'].$get_info);
-exit();
-
-
-
-function uploader(){
-
-
 $target_dir = "./";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -49,14 +38,18 @@ if ($uploadOk == 0) {
 	    $target_file="image";
 	}
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    //    echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
     } else {
-   //     echo "Sorry, there was an error uploading your file.";
+        echo "Sorry, there was an error uploading your file.";
     }
 }
 
 
-}
+$get_info = "?status=success";
+header("Location: ".$_SERVER['REQUEST_URI'].$get_info);
+exit();
 
 }
+
+
 ?>

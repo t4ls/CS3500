@@ -4,7 +4,7 @@
 <?php $twig = new Twig_Environment($loader); ?>
 
 <?php echo $twig->render('base.html', array('header' => 'Display Webcam Stream')); ?>
-
+<?php require '../Assignment-3/upload.php';?>
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
 
         <div class="row" style="text-align:center;">
             <br>
-            <form action="./Assignment-3/upload.php" method="post" enctype="multipart/form-data">
+            <form action="" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="fileToUpload" id="fileToUpload">
                 <input type="submit" value="Upload Image" name="submitbutton">
