@@ -11,6 +11,12 @@ audio:not([controls]) {
 [hidden] {
     display: none;
 }
+html {		
+    background: #fff;		
+    color: #000;		
+    font-family: sans-serif;		
+    -ms-text-size-adjust: 100%;		
+    -webkit-text-size-adjust: 100%}
 body {
     margin: 0;
 }
@@ -154,6 +160,7 @@ ul {
     margin: 0;
     text-align: left;
 }
+
 @media (min-width: 40rem) {
     ul {
     display: inline-block;
@@ -204,6 +211,11 @@ hr {
 @media (min-width: 40rem) {
     hr {
     margin: 2.5rem auto;
+}
+}*, *:before, *:after {		
+    -webkit-box-sizing: border-box;		
+    -moz-box-sizing: border-box;		
+    box-sizing: border-box;		
 }
 body {
     margin: 0;
