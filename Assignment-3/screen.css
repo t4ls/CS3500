@@ -150,19 +150,6 @@ p {
     background: #e67e39;
     color: #fff;
 }
-code {
-    color: #aaa;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
-    font-family: Consolas, Courier, monospace;
-    font-size: 0.9rem;
-    padding: 0.1rem 0.3rem;
-    position: relative;
-    top: -1px;
-}
 ul {
     margin: 0;
     text-align: left;
@@ -217,11 +204,6 @@ hr {
 @media (min-width: 40rem) {
     hr {
     margin: 2.5rem auto;
-}
-}*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -316,8 +298,8 @@ header p {
     transform: scale(0.9,  0.9);
 }
 .run-functions-button.hide {
-    background-color: #fdf485;
-    color: #777;
+    color: #000;
+    background-color: green;
     -webkit-transition: -webkit-transform 0.8s, top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75);
     -moz-transition: -moz-transform 0.8s, top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75);
     -o-transition: -o-transform 0.8s, top 0.8s cubic-bezier(0.22,  -0.37,  0.75,  0.75);
