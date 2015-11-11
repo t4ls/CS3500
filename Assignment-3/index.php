@@ -1,3 +1,4 @@
+ <link rel="stylesheet" href="../Assignment-3/screen.css">
 <?php require_once '../twig/vendor/autoload.php'; ?>
 <?php $loader = new Twig_Loader_Filesystem('../twig/views/'); ?>
 
@@ -40,8 +41,6 @@
 
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <link rel="stylesheet" href="./twig/bower_components/color-thief/examples/css/screen.css">
 
 </head>
 <body>
