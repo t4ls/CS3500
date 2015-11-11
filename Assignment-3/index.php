@@ -18,9 +18,9 @@
 
 <body>
     <div class="container">
-        <h2 align="center"><b> Lighting Analysis</b></h2>
-        <div class="row" style="text-align:center;">
-            <br>
+        <br>
+          <h2 align="center"><b> Lighting Analysis</b></h2>
+          <div class="row" style="text-align:center;">
             <form action="" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="fileToUpload" id="fileToUpload">
