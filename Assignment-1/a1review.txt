@@ -1,3 +1,15 @@
+1)  https://cs.wmich.edu/~cwk2145/webtechproject/
+2)  https://cs.wmich.edu/~pmp2439/CS3500/Assignment-1/
+3)  https://cs.wmich.edu/~cgs2865/HTMLTutorial.html
+4)  https://cs.wmich.edu/~cyh2670/CS3500/assignment1.html
+5)  https://cs.wmich.edu/~ndy2897/Firstsite.html
+6)  http://pasportit.github.io/CS3500Asgn1.html
+7)  https://cs.wmich.edu/~xbh0958/Resources.php
+8)  https://cs.wmich.edu/~mdh0152/A1.html
+9)  https://cs.wmich.edu/~cyh2670/CS3500/assignment1.html
+10) https://cs.wmich.edu/~hpk3360/CS3500/index.html
+
+
 1 1 5 2 1 3 2 1
 1) Needs more actual content besides links 
 2) Better layout
