@@ -1,13 +1,8 @@
-<?php require_once '../twig/vendor/autoload.php'; ?>
-<?php $loader = new Twig_Loader_Filesystem('../twig/views/'); ?>
-
-<?php $twig = new Twig_Environment($loader); ?>
-<?php echo $twig->render('base.html', array('header' => 'Assignment-4')); ?>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="./twig/bower_components/opencpu.js/opencpu-0.4.js"></script>
+<script src="../twig/bower_components/opencpu.js/opencpu-0.4.js"></script>
     <script>
     //init this script when the page has loaded
-    $(document).ready(function(){
+$(document).ready(function(){
       $("#submitbutton").on("click", function(){
         //disable the button to prevent multiple clicks
         $("#submitbutton").attr("disabled", "disabled");
@@ -76,3 +71,39 @@
 
 
     </div>
+
+
+
+<script>
+//on page ready:
+$(function() {
+  var req = $("#plotdiv").rplot("rollcorr").fail(function(){
+    alert(req.responseText);
+  });
+  
+  //optional, requires jquery-ui.
+  $("#plotdiv").resizable()    
+});
+</script>
+
+<style>
+#plotdiv {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 900px;
+  height: 600px;
+  border: solid gray 1px;
+}
+</style>
+</head>
+
+<body>
+  
+  <h1>Rollcorr OpenCPU App</h1>
+  
+  <p>This is an example of a minimal OpenCPU app.</p>
+  
+  <div id="plotdiv"></div>
+  
+</body>
+</html>
