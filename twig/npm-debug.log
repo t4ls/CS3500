@@ -1,0 +1,232 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'npm-check-updates' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'npm-check-updates', null ]
+5 verbose cache add name=undefined spec="npm-check-updates" args=["npm-check-updates",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'npm-check-updates',
+6 verbose parsed url   path: 'npm-check-updates',
+6 verbose parsed url   href: 'npm-check-updates' }
+7 silly lockFile 1ae65091-npm-check-updates npm-check-updates
+8 verbose lock npm-check-updates /home/blake/.npm/1ae65091-npm-check-updates.lock
+9 silly lockFile 1ae65091-npm-check-updates npm-check-updates
+10 silly lockFile 1ae65091-npm-check-updates npm-check-updates
+11 verbose addNamed [ 'npm-check-updates', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 2824db21-npm-check-updates npm-check-updates@
+14 verbose lock npm-check-updates@ /home/blake/.npm/2824db21-npm-check-updates.lock
+15 silly addNameRange { name: 'npm-check-updates', range: '*', hasData: false }
+16 verbose request where is /npm-check-updates
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 21447b0862df6b78
+19 verbose url raw /npm-check-updates
+20 verbose url resolving [ 'https://registry.npmjs.org/', './npm-check-updates' ]
+21 verbose url resolved https://registry.npmjs.org/npm-check-updates
+22 verbose request where is https://registry.npmjs.org/npm-check-updates
+23 info trying registry request attempt 1 at 02:56:35
+24 http GET https://registry.npmjs.org/npm-check-updates
+25 http 200 https://registry.npmjs.org/npm-check-updates
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"8EBQ7DGAXRHM2DWX2YRC7JDC2"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '91366',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sun, 15 Nov 2015 07:56:35 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1447574195.497051,VS0,VE382',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'npm-check-updates', range: '*', hasData: true }
+28 silly addNameRange versions [ 'npm-check-updates',
+28 silly addNameRange   [ '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.5.0',
+28 silly addNameRange     '1.5.1',
+28 silly addNameRange     '2.0.0-alpha1',
+28 silly addNameRange     '2.0.0-alpha2',
+28 silly addNameRange     '2.0.0-alpha3',
+28 silly addNameRange     '2.0.0-alpha4',
+28 silly addNameRange     '2.0.0-alpha5',
+28 silly addNameRange     '2.0.0-alpha6',
+28 silly addNameRange     '2.0.0-alpha.7',
+28 silly addNameRange     '2.0.0-alpha.8',
+28 silly addNameRange     '2.0.0-alpha.9',
+28 silly addNameRange     '2.0.0-alpha.10',
+28 silly addNameRange     '2.0.0-alpha.11',
+28 silly addNameRange     '2.0.0-alpha.12',
+28 silly addNameRange     '2.0.0-alpha.13',
+28 silly addNameRange     '2.0.0-alpha.14',
+28 silly addNameRange     '2.0.0-alpha.15',
+28 silly addNameRange     '2.0.0-alpha.16',
+28 silly addNameRange     '2.0.0-alpha.17',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '2.0.1',
+28 silly addNameRange     '2.0.2',
+28 silly addNameRange     '2.0.3',
+28 silly addNameRange     '2.0.4',
+28 silly addNameRange     '2.1.0',
+28 silly addNameRange     '2.1.1',
+28 silly addNameRange     '2.1.2',
+28 silly addNameRange     '2.1.3',
+28 silly addNameRange     '2.2.0',
+28 silly addNameRange     '2.2.1',
+28 silly addNameRange     '2.2.2',
+28 silly addNameRange     '2.2.3',
+28 silly addNameRange     '2.2.4',
+28 silly addNameRange     '2.3.0',
+28 silly addNameRange     '2.3.1',
+28 silly addNameRange     '2.3.2',
+28 silly addNameRange     '2.3.3',
+28 silly addNameRange     '2.3.4',
+28 silly addNameRange     '2.4.0',
+28 silly addNameRange     '2.4.1',
+28 silly addNameRange     '2.4.2' ] ]
+29 verbose addNamed [ 'npm-check-updates', '2.4.2' ]
+30 verbose addNamed [ '2.4.2', '2.4.2' ]
+31 silly lockFile 33615685-npm-check-updates-2-4-2 npm-check-updates@2.4.2
+32 verbose lock npm-check-updates@2.4.2 /home/blake/.npm/33615685-npm-check-updates-2-4-2.lock
+33 silly lockFile 13ac0cdf-ates-npm-check-updates-2-4-2-tgz https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz
+34 verbose lock https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz /home/blake/.npm/13ac0cdf-ates-npm-check-updates-2-4-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz',
+35 verbose addRemoteTarball   '712a21d88481c18cc98ae6e804dc6c12d5a9aa80' ]
+36 info retry fetch attempt 1 at 02:56:35
+37 verbose fetch to= /tmp/npm-24530-n8iTYV3y/registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz
+38 http GET https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz
+39 http 200 https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz
+40 silly lockFile 13ac0cdf-ates-npm-check-updates-2-4-2-tgz https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz
+41 silly lockFile 13ac0cdf-ates-npm-check-updates-2-4-2-tgz https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz
+42 silly lockFile 33615685-npm-check-updates-2-4-2 npm-check-updates@2.4.2
+43 silly lockFile 33615685-npm-check-updates-2-4-2 npm-check-updates@2.4.2
+44 silly lockFile 2824db21-npm-check-updates npm-check-updates@
+45 silly lockFile 2824db21-npm-check-updates npm-check-updates@
+46 silly resolved [ { name: 'npm-check-updates',
+46 silly resolved     version: '2.4.2',
+46 silly resolved     author: { name: 'Tomas Junnonen', email: 'tomas1@gmail.com' },
+46 silly resolved     license: 'MIT',
+46 silly resolved     contributors: [ [Object] ],
+46 silly resolved     description: 'Find newer versions of dependencies than what your package.json or bower.json allows',
+46 silly resolved     keywords:
+46 silly resolved      [ 'npm',
+46 silly resolved        'bower',
+46 silly resolved        'check',
+46 silly resolved        'find',
+46 silly resolved        'discover',
+46 silly resolved        'updates',
+46 silly resolved        'upgrades',
+46 silly resolved        'dependencies',
+46 silly resolved        'package.json',
+46 silly resolved        'bower.json',
+46 silly resolved        'updater',
+46 silly resolved        'version',
+46 silly resolved        'management' ],
+46 silly resolved     preferGlobal: true,
+46 silly resolved     main: './lib/npm-check-updates',
+46 silly resolved     scripts: { lint: 'eslint bin lib', test: 'npm run lint && mocha' },
+46 silly resolved     bin:
+46 silly resolved      { 'npm-check-updates': './bin/old-alias',
+46 silly resolved        ncu: './bin/npm-check-updates' },
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git+https://github.com/tjunnone/npm-check-updates.git' },
+46 silly resolved     homepage: 'https://github.com/tjunnone/npm-check-updates',
+46 silly resolved     dependencies:
+46 silly resolved      { async: '^1.4.1',
+46 silly resolved        bluebird: '^2.9.34',
+46 silly resolved        bower: '^1.5.3',
+46 silly resolved        chalk: '^1.1.0',
+46 silly resolved        cint: '^8.2.1',
+46 silly resolved        'cli-table': '^0.3.1',
+46 silly resolved        commander: '^2.8.1',
+46 silly resolved        'fast-diff': '^1.0.1',
+46 silly resolved        'find-up': '^1.0.0',
+46 silly resolved        'get-stdin': '^5.0.1',
+46 silly resolved        'json-parse-helpfulerror': '^1.0.3',
+46 silly resolved        lodash: '^3.10.1',
+46 silly resolved        npm: '^3.3.3',
+46 silly resolved        'require-dir': '^0.3.0',
+46 silly resolved        semver: '^5.0.1',
+46 silly resolved        'semver-utils': '^1.1.1',
+46 silly resolved        'update-notifier': '^0.5.0' },
+46 silly resolved     devDependencies:
+46 silly resolved      { chai: '^3.2.0',
+46 silly resolved        'chai-as-promised': '^5.1.0',
+46 silly resolved        'chai-string': '^1.1.2',
+46 silly resolved        eslint: '^1.1.0',
+46 silly resolved        mocha: '^2.2.5',
+46 silly resolved        should: '^7.0.2',
+46 silly resolved        'spawn-please': '^0.1.0' },
+46 silly resolved     gitHead: '97df0e7f7e3d91661cab42a4c5051b9711c11ee2',
+46 silly resolved     bugs: { url: 'https://github.com/tjunnone/npm-check-updates/issues' },
+46 silly resolved     _id: 'npm-check-updates@2.4.2',
+46 silly resolved     _shasum: '712a21d88481c18cc98ae6e804dc6c12d5a9aa80',
+46 silly resolved     _from: 'npm-check-updates@',
+46 silly resolved     _npmVersion: '2.14.7',
+46 silly resolved     _nodeVersion: '4.2.1',
+46 silly resolved     _npmUser: { name: 'raine', email: 'raineorshine@gmail.com' },
+46 silly resolved     dist:
+46 silly resolved      { shasum: '712a21d88481c18cc98ae6e804dc6c12d5a9aa80',
+46 silly resolved        tarball: 'http://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz' },
+46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-2.4.2.tgz' } ]
+47 info install npm-check-updates@2.4.2 into /usr/local/lib
+48 info installOne npm-check-updates@2.4.2
+49 verbose lib/node_modules/npm-check-updates unbuild
+50 verbose tar unpack /home/blake/.npm/npm-check-updates/2.4.2/package.tgz
+51 silly lockFile 7911e73f-b-node-modules-npm-check-updates tar:///usr/local/lib/node_modules/npm-check-updates
+52 verbose lock tar:///usr/local/lib/node_modules/npm-check-updates /home/blake/.npm/7911e73f-b-node-modules-npm-check-updates.lock
+53 silly lockFile 42c3d826--check-updates-2-4-2-package-tgz tar:///home/blake/.npm/npm-check-updates/2.4.2/package.tgz
+54 verbose lock tar:///home/blake/.npm/npm-check-updates/2.4.2/package.tgz /home/blake/.npm/42c3d826--check-updates-2-4-2-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/npm-check-updates'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/npm-check-updates']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/npm-check-updates',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/npm-check-updates',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Linux 4.2.0-1-amd64
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "npm-check-updates"
+60 error cwd /var/www/html/CS3500/twig
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/npm-check-updates
+64 error fstream_path /usr/local/lib/node_modules/npm-check-updates
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/npm-check-updates'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
