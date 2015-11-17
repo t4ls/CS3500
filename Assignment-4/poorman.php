@@ -15,7 +15,7 @@ if(isset($_GET['N']))
   exec("Rscript my_rscript.R $N");
  
   // return image tag
-  $nocache = rand();
+  $nocache = time();
   echo("<img src='temp.png?$nocache' />");
 }
 ?>
