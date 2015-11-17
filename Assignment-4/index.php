@@ -22,11 +22,12 @@ if(isset($_POST['submitbutton'])){
  
   // execute R script from shell
   // this will save a plot at temp.png to the filesystem
-  exec("Rscript my_rscript.R $N");
- 
+  exec("/usr/bin/Rscript ./Assignment-4/my_rscript.R $N");
+  exec("/usr/bin/ls"); 
   // return image tag
   echo("<img src='./Assignment-4/temp.png' />");
 }
+shell_exec("php -v"); 
 ?>
 
 
