@@ -9,7 +9,7 @@
 
   <div class="container">
       <br>
-          <h2 align="center"><b>graph thing</b></h2>
+          <h2 align="center"><b>Predator-Prey Graph</b></h2>
           <div class="row" style="text-align:center;">
 
 <a href="http://www.vps.cs.wmich.edu:60343/sample-apps/preypred/">http://www.vps.cs.wmich.edu:60343/sample-apps/preypred/</a>
