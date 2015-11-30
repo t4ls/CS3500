@@ -26,6 +26,7 @@ Not sure what this is yet. Something with detecting color out of videos in html.
 
 ## Assignment 4:
 Modeling Lotka Volterra Predator-Prey relations
+
 1. http://www.vps.cs.wmich.edu:60343/sample-apps/preypred/
 2. /opt/shiny-server/samples/sample-apps
 
