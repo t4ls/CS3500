@@ -13,8 +13,8 @@
             <div class="row" style="margin-top: 1%;display: block;margin-left: auto;margin-right: auto;text-align:center;">
 
                 <div class="one-half column" style="text-align:center;">
-                    <h4><b>PATRICK</b></h4>
-                    <img width="80%" height="100%" src="./twig/images/patrick_lol.jpg">
+                    <h4><b>BRANDON</b></h4>
+                    <img width="80%" height="100%" src="./twig/images/brandon_lol.jpg">
                   
                 </div>
                 <div class="one-half column" style="text-align:center;">
