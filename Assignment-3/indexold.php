@@ -85,6 +85,62 @@ function videoError(e) {
 
 
 
+<h4> Added some cool R stuff</h4>
+<p>Run Arbitrary Function</p>
+<textarea id="input" rows="10" cols="50" style="width:50%; height: 120px;">
+function(){
+hello <- 5
+  return(hello+1)   
+}
+</textarea> 
+<br /> <button id="submitbutton" type="button">Call R</button>
+
+<pre><code id="output"></code></pre>
+
+<script type="text/javascript">
+window.alert = function() {};
+alert = function() {};
+
+//because identity is in base
+ocpu.seturl("//public.opencpu.org/ocpu/library/base/R")
+
+//actual handler
+$("#submitbutton").on("click", function(){
+
+    //arguments
+    var mysnippet = new ocpu.Snippet($("#input").val());
+    
+    //disable button
+    $("button").attr("disabled", "disabled");
+
+    //perform the request
+    var req = ocpu.rpc("do.call", {
+        what : mysnippet,
+        args : {
+//            x : [1,2,3,4,5],
+//            n : 3
+        }
+    }, function(output){
+      $("#output").text(output); 
+    });
+        
+    //if R returns an error, alert the error message
+    req.fail(function(){
+        alert("Server error: " + req.responseText);
+    });      
+    
+    req.always(function(){
+        $("button").removeAttr("disabled");    
+    });
+}); 
+</script>
+
+
+</div>
+
+
+
+
 </body>
 </html>
 
