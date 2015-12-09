@@ -29,5 +29,5 @@ Modeling Lotka Volterra Predator-Prey relations
 
 1. http://www.vps.cs.wmich.edu:60343/sample-apps/preypred/
 2. /opt/shiny-server/samples/sample-apps
-
+3. Working on ruby app up to ch14
 
