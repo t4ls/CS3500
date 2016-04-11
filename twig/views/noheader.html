@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <TITLE>{{ header }}</TITLE>
+  <meta name="description" content="CS3500">
+  <meta name="author" content="Blake Wrege and Brandon Kelly">
+  
+  <!-- Change base dependent on system -->
+  <p id="test"></p>
+  <script>
+      function urlpath() {
+          var hosts = window.location.href;
+          if (hosts.indexOf("brp9209") > -1) {
+              var strLink = "https://cs.wmich.edu/~brp9209/CS3500/";
+          } else if (hosts.indexOf("bsm2924") > -1) {
+              var strLink = "https://cs.wmich.edu/~bsm2924/CS3500/";
+          } else {
+              var strLink = "/CS3500/";
+          }
+          return "<base href = " + strLink + " />";
+      }
+      document.getElementById("test").innerHTML = urlpath();
+  </script>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./twig/css/normalize.css">
+  <link rel="stylesheet" href="./twig/css/skeleton.css">
+  <link rel="stylesheet" href="./twig/css/stylesheet.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./twig/images/favicon.png"> 
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
